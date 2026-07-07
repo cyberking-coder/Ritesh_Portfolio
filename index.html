@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Ritesh — UI/UX & Web Designer. Crafting clean, modern, user-focused digital experiences." />
+  <title>Ritesh — UI/UX & Web Designer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Manrope:wght@300;400;500;600;700;800&family=Fraunces:ital,opsz,wght@0,9..144,400;1,9..144,500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- Custom cursor -->
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-dot" id="cursorDot"></div>
+
+  <!-- Page loader -->
+  <div class="loader" id="loader">
+    <div class="loader__inner">
+      <span class="loader__count" id="loaderCount">0</span>
+      <span class="loader__label">Loading Experience</span>
+    </div>
+  </div>
+
+  <!-- Progress bar -->
+  <div class="scroll-progress" id="scrollProgress"></div>
+
+  <!-- Navbar -->
+  <header class="nav" id="nav">
+    <a href="#top" class="nav__brand">RITESH<span>®</span></a>
+    <nav class="nav__links">
+      <a href="#work" data-hover>Work</a>
+      <a href="#process" data-hover>Process</a>
+      <a href="#about" data-hover>About</a>
+      <a href="#contact" data-hover>Contact</a>
+    </nav>
+    <a href="#contact" class="nav__cta" data-hover>Available for freelance <span class="dot"></span></a>
+  </header>
+
+  <main id="top">
+    <!-- HERO -->
+    <section class="hero">
+      <div class="hero__meta">
+        <span class="reveal-line"><span>Creative Portfolio</span></span>
+        <span class="reveal-line"><span>Available for Freelance ✦</span></span>
+      </div>
+
+      <h1 class="hero__title">
+        <span class="line"><span data-stagger>PORTFOLIO</span></span>
+      </h1>
+
+      <div class="hero__grid">
+        <div class="hero__tags">
+          <p class="reveal-up">UI / UX / WEB</p>
+          <ul>
+            <li class="reveal-up">User Experience</li>
+            <li class="reveal-up">User Interface</li>
+            <li class="reveal-up">Web Design</li>
+          </ul>
+        </div>
+
+        <div class="hero__center" data-tilt>
+          <div class="hero__photo">
+            <img src="assets/hero.jpg" alt="Ritesh portrait" onerror="this.classList.add('is-fallback')" />
+            <span class="hero__photo-fallback">Add <code>assets/hero.jpg</code></span>
+          </div>
+        </div>
+
+        <div class="hero__intro">
+          <h2 class="reveal-up">RITESH<br />SHARMA</h2>
+          <p class="hero__role reveal-up">UI/UX &amp; Web Designer</p>
+          <p class="hero__desc reveal-up">I'm a digital designer crafting clean, modern and user-focused designs. I help brands communicate, engage and grow through thoughtful design solutions.</p>
+          <div class="hero__stats">
+            <div class="reveal-up"><b data-count="4">0</b><span>Years<br />Experience</span></div>
+            <div class="reveal-up"><b data-count="28">0</b><span>Projects<br />Completed</span></div>
+            <div class="reveal-up"><b data-count="12">0</b><span>Happy<br />Clients</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- MARQUEE -->
+    <section class="marquee" aria-hidden="true">
+      <div class="marquee__track">
+        <span>UI Design ✦ UX Strategy ✦ Web Design ✦ Prototyping ✦ Design Systems ✦ Branding ✦ Interaction ✦</span>
+        <span>UI Design ✦ UX Strategy ✦ Web Design ✦ Prototyping ✦ Design Systems ✦ Branding ✦ Interaction ✦</span>
+      </div>
+    </section>
+
+    <!-- WHAT I DO -->
+    <section class="section services" id="services">
+      <div class="section__head">
+        <span class="tag reveal-up">What I Do</span>
+        <h2 class="section__title reveal-up">Services that turn ideas<br />into impactful products.</h2>
+      </div>
+      <div class="services__grid">
+        <article class="service reveal-up" data-hover>
+          <span class="service__num">01</span>
+          <h3>UI/UX Design</h3>
+          <p>Designing intuitive and engaging user experiences that drive results.</p>
+        </article>
+        <article class="service reveal-up" data-hover>
+          <span class="service__num">02</span>
+          <h3>Web Design</h3>
+          <p>Building modern, responsive and high-performance websites.</p>
+        </article>
+        <article class="service reveal-up" data-hover>
+          <span class="service__num">03</span>
+          <h3>Interaction Design</h3>
+          <p>Crafting meaningful interactions and smooth micro-animations.</p>
+        </article>
+        <article class="service reveal-up" data-hover>
+          <span class="service__num">04</span>
+          <h3>Prototyping</h3>
+          <p>Turning ideas into clickable prototypes and testable flows.</p>
+        </article>
+        <article class="service reveal-up" data-hover>
+          <span class="service__num">05</span>
+          <h3>Design Systems</h3>
+          <p>Building consistent design languages and reusable components.</p>
+        </article>
+        <article class="service reveal-up service--cta" data-hover>
+          <span class="service__num">→</span>
+          <h3>Start a project</h3>
+          <p>Have something in mind? Let's build it together.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- PROCESS -->
+    <section class="section process" id="process">
+      <div class="section__head">
+        <span class="tag reveal-up">My Process</span>
+        <h2 class="section__title reveal-up">How I bring your<br />vision to life.</h2>
+      </div>
+      <div class="process__list">
+        <div class="process__row reveal-up" data-hover>
+          <span class="process__num">01</span>
+          <h3>Discover</h3>
+          <p>Understanding goals, audience and project requirements.</p>
+        </div>
+        <div class="process__row reveal-up" data-hover>
+          <span class="process__num">02</span>
+          <h3>Define</h3>
+          <p>Research, wireframing and structuring the right solution.</p>
+        </div>
+        <div class="process__row reveal-up" data-hover>
+          <span class="process__num">03</span>
+          <h3>Design</h3>
+          <p>Crafting clean, modern and user-centric visuals.</p>
+        </div>
+        <div class="process__row reveal-up" data-hover>
+          <span class="process__num">04</span>
+          <h3>Develop</h3>
+          <p>Collaborating with developers to bring the design to life.</p>
+        </div>
+        <div class="process__row reveal-up" data-hover>
+          <span class="process__num">05</span>
+          <h3>Deliver</h3>
+          <p>Testing, refining and delivering pixel-perfect results.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- WORK -->
+    <section class="section work" id="work">
+      <div class="section__head">
+        <span class="tag reveal-up">Featured Work</span>
+        <h2 class="section__title reveal-up">Selected projects<br />I'm proud of.</h2>
+        <a href="#contact" class="section__link reveal-up" data-hover>View all projects →</a>
+      </div>
+      <div class="work__grid">
+        <article class="card card--lg reveal-up" data-hover>
+          <div class="card__media"><img src="assets/work-1.jpg" alt="Project one" onerror="this.style.display='none'" /></div>
+          <div class="card__body">
+            <span class="card__cat">Web Design / Development</span>
+            <h3>We Craft Brands</h3>
+          </div>
+        </article>
+        <article class="card reveal-up" data-hover>
+          <div class="card__media"><img src="assets/work-2.jpg" alt="Project two" onerror="this.style.display='none'" /></div>
+          <div class="card__body">
+            <span class="card__cat">UI Design</span>
+            <h3>Smart Investments</h3>
+          </div>
+        </article>
+        <article class="card reveal-up" data-hover>
+          <div class="card__media"><img src="assets/work-3.jpg" alt="Project three" onerror="this.style.display='none'" /></div>
+          <div class="card__body">
+            <span class="card__cat">Web Design / Development</span>
+            <h3>Elevate Studio</h3>
+          </div>
+        </article>
+        <article class="card reveal-up" data-hover>
+          <div class="card__media"><img src="assets/work-4.jpg" alt="Project four" onerror="this.style.display='none'" /></div>
+          <div class="card__body">
+            <span class="card__cat">UI / UX Design</span>
+            <h3>Nexus Finance</h3>
+          </div>
+        </article>
+        <article class="card card--wide reveal-up" data-hover>
+          <div class="card__media"><img src="assets/work-5.jpg" alt="Project five" onerror="this.style.display='none'" /></div>
+          <div class="card__body">
+            <span class="card__cat">Travel / Web Design</span>
+            <h3>Explore the Unseen</h3>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="section about" id="about">
+      <div class="about__grid">
+        <div class="about__left">
+          <span class="tag reveal-up">About Me</span>
+          <div class="about__photo reveal-up" data-tilt>
+            <img src="assets/about.jpg" alt="About Ritesh" onerror="this.style.opacity=0" />
+          </div>
+        </div>
+        <div class="about__right">
+          <p class="about__lead reveal-up">I'm a UI/UX &amp; Web Designer with a passion for minimal design, clean interfaces and seamless experiences.</p>
+          <p class="about__text reveal-up">I believe great design isn't just about how it looks, but how it works. Every pixel has a purpose.</p>
+          <ul class="about__points">
+            <li class="reveal-up">Detail-oriented</li>
+            <li class="reveal-up">Problem solver</li>
+            <li class="reveal-up">Minimal &amp; modern</li>
+            <li class="reveal-up">Always learning</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- TOOLS -->
+      <div class="tools">
+        <span class="tag reveal-up">Tools I Use</span>
+        <div class="tools__row">
+          <span class="reveal-up" data-hover>Figma</span>
+          <span class="reveal-up" data-hover>Adobe XD</span>
+          <span class="reveal-up" data-hover>Photoshop</span>
+          <span class="reveal-up" data-hover>Illustrator</span>
+          <span class="reveal-up" data-hover>Webflow</span>
+          <span class="reveal-up" data-hover>Framer</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="section contact" id="contact">
+      <div class="contact__inner">
+        <span class="tag reveal-up">Let's Collaborate</span>
+        <h2 class="contact__title">
+          <span class="line"><span data-stagger>LET'S WORK</span></span>
+          <span class="line"><span data-stagger>TOGETHER</span></span>
+        </h2>
+        <p class="contact__desc reveal-up">Have a project in mind or just want to say hello? Let's create something amazing together.</p>
+        <a href="mailto:ritesh@example.com" class="contact__mail reveal-up" data-hover>ritesh@example.com</a>
+        <div class="contact__socials">
+          <a href="#" class="reveal-up" data-hover>Instagram</a>
+          <a href="#" class="reveal-up" data-hover>Dribbble</a>
+          <a href="#" class="reveal-up" data-hover>LinkedIn</a>
+          <a href="#" class="reveal-up" data-hover>Behance</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <span>© 2026 Ritesh Sharma</span>
+    <span>Designed &amp; Built with ✦</span>
+    <a href="#top" data-hover>Back to top ↑</a>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
