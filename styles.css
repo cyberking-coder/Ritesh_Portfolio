@@ -294,6 +294,8 @@ a { color: inherit; text-decoration: none; }
 .contact__mail { font-family: var(--font-serif); font-style: italic; font-size: clamp(1.6rem, 5vw, 3.4rem); position: relative; }
 .contact__mail::after { content: ""; position: absolute; left: 0; bottom: 4px; width: 100%; height: 1px; background: var(--cream); transform: scaleX(0); transform-origin: left; transition: transform .5s var(--ease); }
 .contact__mail:hover::after { transform: scaleX(1); }
+.contact__phone { display: block; margin-top: 1rem; font-weight: 600; letter-spacing: .1em; color: var(--cream-dim); }
+.contact__phone:hover { color: var(--red); }
 .contact__socials { display: flex; gap: 2rem; margin-top: 2.5rem; flex-wrap: wrap; justify-content: center; font-weight: 600; color: var(--cream-dim); }
 .contact__socials a:hover { color: var(--red); }
 
